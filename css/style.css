@@ -10,8 +10,12 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #272829;
+   background: linear-gradient(
+    135deg,
+    #f4f8fb 0%,
+    #e9f2fb 40%,
+    #eef3f9 100%
+  );
 }
 
 a {
