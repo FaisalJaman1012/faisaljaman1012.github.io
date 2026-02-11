@@ -9,20 +9,36 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Premium Soft Gradient Background (Except Hero)
+--------------------------------------------------------------*/
 body {
-   background: linear-gradient(
-    135deg,
-    #f4f8fb 0%,
-    #e9f2fb 40%,
-    #eef3f9 100%
-  );
+  margin: 0;
+  padding: 0;
 }
 
-.section-bg,
-#hero,
-section {
+/* Apply gradient only to main content area */
+#main {
+  background: linear-gradient(
+    135deg,
+    #f5f9ff 0%,
+    #eaf2fb 40%,
+    #f8fbff 100%
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Remove template grey backgrounds */
+.section-bg {
   background: transparent !important;
 }
+
+/* Keep hero untouched */
+#hero {
+  /* DO NOT MODIFY */
+}
+
 
 a {
   color: #0563bb;
