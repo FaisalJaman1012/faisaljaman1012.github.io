@@ -9,36 +9,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Premium Soft Gradient Background (Except Hero)
---------------------------------------------------------------*/
 body {
-  margin: 0;
-  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
 }
-
-/* Apply gradient only to main content area */
-#main {
-  background: linear-gradient(
-    135deg,
-    #f5f9ff 0%,
-    #eaf2fb 40%,
-    #f8fbff 100%
-  );
-  background-attachment: fixed;
-  min-height: 100vh;
-}
-
-/* Remove template grey backgrounds */
-.section-bg {
-  background: transparent !important;
-}
-
-/* Keep hero untouched */
-#hero {
-  /* DO NOT MODIFY */
-}
-
 
 a {
   color: #0563bb;
