@@ -1,984 +1,628 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-accent="cyan">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Md Faisal Jaman — Security Engineer · Penetration Tester · Cyber Instructor</title>
+  <meta name="description" content="Portfolio of Md Faisal Jaman — Security Engineer, penetration tester, CTF player and cybersecurity instructor. VAPT, web &amp; network security, CompTIA PenTest+, Security+, Network+, Linux+.">
+  <meta name="keywords" content="Md Faisal Jaman, cybersecurity, penetration tester, VAPT, CTF, security engineer, ethical hacking, Bangladesh">
+  <meta name="author" content="Md Faisal Jaman">
+  <meta name="theme-color" content="#04060c">
+  <link rel="canonical" href="https://www.faisaljaman.com/">
 
-  <title>Web-Portfolio </title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Md Faisal Jaman — Security Engineer & Penetration Tester">
+  <meta property="og:description" content="VAPT, web &amp; network security, CTF player, cybersecurity instructor. “Your Security is My Passion.”">
+  <meta property="og:url" content="https://www.faisaljaman.com/">
+  <meta property="og:image" content="https://www.faisaljaman.com/img/profile-img.jpg">
+  <meta name="twitter:card" content="summary">
 
-  <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
 
-  <!-- Vendor CSS Files -->
-  <link href="vendor/aos/aos.css" rel="stylesheet">
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script>
+    document.documentElement.classList.add('js');
+    try { var a = localStorage.getItem('fj-accent'); if (a) document.documentElement.dataset.accent = a; } catch (e) {}
+  </script>
 
-  <!-- Main CSS File -->
-  <link href="css/style.css" rel="stylesheet">
-
- 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Md Faisal Jaman",
+    "url": "https://www.faisaljaman.com/",
+    "image": "https://www.faisaljaman.com/img/profile-img.jpg",
+    "jobTitle": "Security Engineer",
+    "worksFor": { "@type": "Organization", "name": "Mutual Trust Bank PLC" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Lovely Professional University" },
+    "email": "mailto:faisaljaman.infosec@gmail.com",
+    "sameAs": [
+      "https://github.com/FaisalJaman1012",
+      "https://www.linkedin.com/in/faisaljaman1012/",
+      "https://medium.com/@faisaljaman.infosec",
+      "https://twitter.com/Jaman_1210"
+    ]
+  }
+  </script>
 </head>
 
 <body>
+  <!-- SVG icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-twitter" viewBox="0 0 24 24"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-medium" viewBox="0 0 24 24"><circle cx="7" cy="12" r="5"/><ellipse cx="16.5" cy="12" rx="2.5" ry="5"/><path d="M22 7v10"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></symbol>
+    <symbol id="i-arrow-l" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><path d="m4 17 6-6-6-6"/><path d="M12 19h8"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><path d="M12 20h.01"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></symbol>
+    <symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M19.4 14.9C20.2 16.4 21 17 21 18a3 3 0 0 1-3 3h-3.2a1.8 1.8 0 0 0-1.8 1.8h-2a1.8 1.8 0 0 0-1.8-1.8H6a3 3 0 0 1-3-3v-3.2a1.8 1.8 0 0 0-1.8-1.8v-2A1.8 1.8 0 0 0 3 9.2V6a3 3 0 0 1 3-3h3.2a1.8 1.8 0 0 0 1.8-1.8h2A1.8 1.8 0 0 0 14.8 3H18a3 3 0 0 1 3 3v3.2"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3z"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></symbol>
+  </svg>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+  <a class="skip-link" href="#about">Skip to content</a>
+  <div class="scroll-progress" id="progress" aria-hidden="true"></div>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="ambient" aria-hidden="true"><i></i></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" id="glow" aria-hidden="true"></div>
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>       
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a class="brand" href="#hero" aria-label="Md Faisal Jaman — home">
+      <span class="brand-mark">FJ</span>
+      <span class="brand-text">faisal<span>.sec</span></span>
+    </a>
+
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" data-sec="hero">Home</a></li>
+        <li><a href="#about" data-sec="about">About</a></li>
+        <li><a href="#skills" data-sec="skills">Skills</a></li>
+        <li><a href="#experience" data-sec="experience">Experience</a></li>
+        <li><a href="#projects" data-sec="projects">Projects</a></li>
+        <li><a href="#credentials" data-sec="credentials">Credentials</a></li>
+        <li><a href="#gallery" data-sec="gallery">Gallery</a></li>
+        <li><a href="#contact" data-sec="contact">Contact</a></li>
       </ul>
-    </nav><!-- .nav-menu -->
-    
-  </header><!-- End Header -->
+    </nav>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Md Faisal Jaman</h1>
-      <p>I'm <span class="typed" data-typed-items="Cyber Enthusiast, CTF Player, Penetration Tester, Instructor"></span></p>
-      <div class="social-links">
-        <a href="https://twitter.com/Jaman_1210" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/fjnirjon.fjnirjon" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://github.com/FaisalJaman1012" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://medium.com/@faisaljaman.infosec" class="medium"><i class="bx bxl-medium"></i></a>
-        <a href="https://www.linkedin.com/in/faisaljaman1012/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    <div class="nav-actions">
+      <div class="accents" role="group" aria-label="Accent colour">
+        <button class="accent-dot" data-accent="cyan" style="--c:#00e5ff" aria-label="Cyan accent" aria-pressed="true"></button>
+        <button class="accent-dot" data-accent="green" style="--c:#39ff88" aria-label="Matrix green accent" aria-pressed="false"></button>
+        <button class="accent-dot" data-accent="violet" style="--c:#b197ff" aria-label="Violet accent" aria-pressed="false"></button>
+        <button class="accent-dot" data-accent="red" style="--c:#ff4d6d" aria-label="Red team accent" aria-pressed="false"></button>
       </div>
+      <button class="kbd-btn" id="open-palette" aria-label="Open command palette">
+        <svg class="icon"><use href="#i-search"/></svg><span class="kbd-text">Ctrl&nbsp;K</span>
+      </button>
+      <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <svg class="icon"><use href="#i-menu"/></svg>
+      </button>
     </div>
-  </section><!-- End Hero -->
+  </header>
 
-  <main id="main">
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>I am a cybersecurity enthusiast with a strong interest in ethical hacking, penetration testing, vulnerability analysis, and network security. Hard-working, energetic, personable, and technical- minded individual. I am in a cybersecurity role where I continue to develop and learn new abilities while contributing to the organization's overall success. I also possess:
-            Hands-on in scripting languages including Python and Bash Ability to handle multiple projects simultaneously</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" > 
-            <img src="img/profile-img.jpg"  alt=""  height="400" >
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Penetration Tester &amp; Cyber Instructor.</h3>
-            <p class="fst-italic">
-              <br>
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <span class="status-chip reveal"><i class="pulse"></i> Open to freelance · Dhaka, BD</span>
+            <h1 class="reveal" style="--d:80ms">
+              <span class="glitch grad" data-text="Md Faisal" id="glitch-1">Md Faisal</span><br>
+              <span class="glitch" data-text="Jaman">Jaman</span>
+            </h1>
+            <p class="role-line reveal" style="--d:160ms" aria-live="off">
+              <span aria-hidden="true">&gt; </span>I’m a <b id="role"></b><span class="caret" aria-hidden="true"></span>
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.faisaljaman.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span> +880 1794827327 / +91 7780379954</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span> Dhaka,Bangladesh / Jalandhar,Punjab,India</span></li>
-                </ul>
-              </div>  
-              <div class="col-lg-6">
-                <ul>
-                 
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech CSE (Cyber Security & Blockchain)</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>faisaljaman.infosec@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-            </div>
-            <p><br>
-              “Your Security is My Passion”
-              I'm pursuing B.tech CSE with an Specialization on Cybersecurity and Blockchain. I'm a kind of student with a goal of making the Internet safe for all. The development of Web 3.0 and the booming use of Blockchain in the Tech Industry fascinates me a lot.
-              Work smartly and Critical Thinking are my main abilities. Programming, Team Leadership & Management are my other skills.
+            <p class="hero-sub reveal" style="--d:220ms">
+              Security Engineer breaking things on purpose so they stay secure — web &amp; network penetration testing, VAPT reporting, CTFs, and teaching the next generation of defenders.
             </p>
+            <div class="hero-cta reveal" style="--d:280ms">
+              <a class="btn btn-primary btn-ring" href="Md_Faisal_Jaman_CV.pdf" download>
+                <svg class="icon"><use href="#i-download"/></svg> Download CV
+              </a>
+              <a class="btn btn-ghost" href="#contact">
+                <svg class="icon"><use href="#i-terminal"/></svg> Start a conversation
+              </a>
+            </div>
+            <div class="socials reveal" style="--d:340ms">
+              <a href="https://github.com/FaisalJaman1012" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a>
+              <a href="https://www.linkedin.com/in/faisaljaman1012/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+              <a href="https://medium.com/@faisaljaman.infosec" target="_blank" rel="noopener" aria-label="Medium"><svg class="icon"><use href="#i-medium"/></svg></a>
+              <a href="https://twitter.com/Jaman_1210" target="_blank" rel="noopener" aria-label="Twitter / X"><svg class="icon"><use href="#i-twitter"/></svg></a>
+              <a href="https://www.facebook.com/fjnirjon.fjnirjon" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+            </div>
+          </div>
+
+          <div class="terminal reveal" style="--d:200ms" aria-hidden="true">
+            <div class="term-bar"><i></i><i></i><i></i><span>faisal@sec-lab: ~</span></div>
+            <div class="term-body" id="term"></div>
           </div>
         </div>
 
+        <div class="hero-stats">
+          <div class="card stat spot reveal" style="--d:0ms"><b><em data-count="6">0</em></b><span>CompTIA certifications</span></div>
+          <div class="card stat spot reveal" style="--d:80ms"><b><em data-count="1" data-suffix="st">0</em></b><span>Place · CTF Tournament, CiscoXLPUIGEN 2023</span></div>
+          <div class="card stat spot reveal" style="--d:160ms"><b>Top <em data-count="2" data-suffix="%">0</em></b><span>Rank on TryHackMe</span></div>
+          <div class="card stat spot reveal" style="--d:240ms"><b><em data-count="10" data-suffix="+">0</em></b><span>Course &amp; participation certificates</span></div>
+        </div>
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-    
-   
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <br>
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="sec-idx">01 / about</span>
+          <h2 class="sec-title" data-scramble>Hacker mindset, defender’s purpose.</h2>
         </div>
 
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+        <div class="about-grid">
+          <div class="reveal">
+            <div class="portrait tilt">
+              <img src="img/profile-img.jpg" alt="Portrait of Md Faisal Jaman" width="450" height="600" loading="lazy">
+              <span class="tag">// md_faisal_jaman</span>
             </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"> Capture The Flag <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"> OSINT <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-
-            <div class="progress">
-              <span class="skill">System Administration <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
           </div>
 
-          <div class="col-lg-6">
+          <div class="about-copy">
+            <p class="reveal">
+              I’m a <strong>cybersecurity professional</strong> with a strong focus on ethical hacking, penetration testing, vulnerability analysis and network security — hard-working, energetic, personable and technically minded. I like roles where I keep learning new abilities while contributing to an organisation’s overall security posture.
+            </p>
+            <p class="reveal">
+              I’m hands-on with scripting in <strong>Python and Bash</strong>, comfortable juggling multiple projects at once, and I’m pursuing a B.Tech in CSE with a specialisation in <strong>Cyber Security &amp; Blockchain</strong>. The rise of Web 3.0 and blockchain in the tech industry fascinates me. Smart work and critical thinking are my main strengths, alongside programming, team leadership and management.
+            </p>
+            <div class="quote reveal">“Your Security is My Passion.”</div>
 
-            <div class="progress">
-              <span class="skill">Python <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <div class="facts">
+              <div class="card fact spot reveal"><small>Currently</small><span>Security Engineer · Mutual Trust Bank PLC</span></div>
+              <div class="card fact spot reveal"><small>Teaching</small><span>Adj. Assistant Professor · Eastern University</span></div>
+              <div class="card fact spot reveal"><small>Degree</small><span>B.Tech CSE (Cyber Security &amp; Blockchain)</span></div>
+              <div class="card fact spot reveal"><small>Based in</small><span>Dhaka, Bangladesh / Jalandhar, Punjab, India</span></div>
+              <div class="card fact spot reveal"><small>Email</small><a href="mailto:faisaljaman.infosec@gmail.com">faisaljaman.infosec@gmail.com</a></div>
+              <div class="card fact spot reveal"><small>Freelance</small><span><i class="pulse" style="display:inline-block;margin-right:8px"></i>Available</span></div>
             </div>
-
-            <div class="progress">
-              <span class="skill">Network Security <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Web Application Security <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Penetration Testing <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
           </div>
-
         </div>
-
       </div>
-    </section><!-- End Skills Section -->
+    </section>
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <div id="download-resume-btn">
-            <a href="../Md_Faisal_Jaman_CV.pdf" download class="btn btn-primary"><i class="bi bi-download"></i>Download Resume</a>
-          </div>
-           </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item pb-0">
-              <h4>Lovely Professional University</h4>
-              <p><em>B.Tech Hons with an Specialization in Cyber-Security & Blockchain</em></p>
-<!--               <h5>2021 - 2025</h5> -->
-              <ul>
-          
-                <li> 7.45 CGPA</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Certification</h3>
-            <div class="resume-item">
-              <ul>
-          
-                <li> <b> CompTIA Pentest+ </b> <br> Candidate ID: COMP001022460407 <br> Certificate Code: 6NDS6GE59NR42TYJ   </li>
-                 <li> <b> CompTIA Security+ </b> <br> Candidate ID: COMP001022460407 <br> Certificate Code: P7MD76SQ52QEQPC1   </li>
-                <li> <b> CompTIA Network+ </b> <br> Candidate ID: COMP001022460407 <br> Certificate Code: EDZYSH5TPJ4QQZSR   </li>
-                 <li> <b> CompTIA Linux+ </b> <br> Candidate ID: COMP001022460407 <br> Certificate Code:  P76MRGHQRF4EQKCS   </li>
-            </div><br> 
-
-               <h3 class="resume-title"> Projects </h3>
-
-              <div class="resume-item">
-              <h4>SecureTrack [ Project Tracking Platform ]</h4>
-              
-              <p>
-                <b> Domain: Cyber-Security | Programing Language: Node JS </b><br>
-                <ul>
-               <li> SecureTrack is a full-stack enterprise security and project tracking platform built for security teams.</li>
-              <li>  It provides a centralized solution for managing vulnerability assessments, application inventories, IT assets, security findings, and reporting workflows.</li>
-               
-                </ul>
-                </p>
-            </div>
-
-            
-             <div class="resume-item">
-              <h4>HashHaven [ NTLM V2 Hash Capturing Tool ]</h4>
-              
-              <p>
-                <b> Domain: Cyber-Security | Programing Language: Python </b><br>
-                <ul>
-               <li> Develop a Python script to create Windows shortcut files that secretly capture hashes from victim machines upon execution.</li>
-              <li>  Python is used for its platform-independent capabilities and scripting convenience.</li>
-               <li> Running the script generates shortcut files (.scf and .lnk) on Windows systems, initiating hash capturing mechanisms when opened by users, without their knowledge.</li>
-                </ul>
-                </p>
-            </div>
-            
-            
-            
-            <div class="resume-item">
-              <h4>deauthwifi [ Wifi Deauthentication Tool ]</h4>
-              
-              <p>
-               <b> Domain: Cyber-Security | Programing Language: Bash </b> <br>
-               <ul>
-                <li>Inexperienced or forgetful individuals can use wifi deauthentication commands easily with this tool. </li>
-               <li> Developed a tool using Bash script that operates on command line interface (CLI). </li>
-               <li> This tool will help you to scan wifi, De-authenticate and so on. </li>
-               </ul>
-              </p>
-            </div>
-            
-          
-
-            <div class="resume-item">
-              <h4>Puzzle Game</h4>
-              
-              <p>
-                <b> Domain: Cyber-Security | Programing Language: Python </b><br>
-                <ul>
-                <li>This is a Puzzle-based Gaming project where you have to solve some puzzles to gain some points. This project is done with the help of Python.</li>
-                </ul>
-                </p>
-            </div>
-
-           
-
-            <h3 class="resume-title">Courses</h3>
-            <div class="resume-item">
-              <ul>
-          
-                <li> Pre Security </li>
-                <li> Foundation of Cybersecurity </li>
-                <li> Penetration testing and Ethical Hacking </li>
-                <li> Jr Penetration Tester</li>
-                <li> Web Fundamentals </li>
-                <li> Ethical-Hacking</li>
-                <li> Cyber Ethics </li>
-                <li> Cyber Hygeine Practioner</li>
-            </div><br> 
-
-            <h3 class="resume-title">Achievements</h3>
-            <div class="resume-item">
-              <ul>
-                <p><b> 10+ Completion and Participation Certificates from various Online Platforms. </b></p>
-                <li> Received Cloud Goodies From Google</li>
-                <li> Top 2% in Tryhackme </li>
-                <li> GURU rank in Tryhackme </li>
-                <li> Script Kiddie rank in HackTheBox </li>
-                <p><b> Capture the Flag (CTF) </b></p>
-                <li> 1ST PLACE , CTF TOURNAMENT, CISCOXLPUIGEN 2023 </li>
-                <li> 2nd PLACE , RCS CTF 2024</li>
-                <li> 5th PLACE , Quickheal x CompTIA CTF 2024 </li>
-                <li> 6th PLACE , UPGRADE CTF , CONCOCTION 2024</li>
-                <li> 150TH PLACE ,CREW CTF 2023 </li>
-                <li> 164TH PLACE, BDSEC CTF 2023 </li>
-                <li> 285TH PLACE, REPLAY CYBER SECURITY CHALLENGE 2023 </li>
-
-            </div><br> 
-
-            </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4> Mutual Trust Bank PLC<br> Security Engineer </h4>
-              <h5>November, 2025 - Present  </h5>
-              
-              <ul>
-                <li>Doing penetration testing on web application, Network.</li>
-                <li>Writing VAPT Report. </li>
-                <li>Learning SIEM Tool & Threat Intel</li>
-                <li>Supporting the SOC Team</li>      
-              </ul>
-            </div>
-  
-
-            <div class="col-lg-6">
-            
-            <div class="resume-item">
-              <h4> Eastern University <br> Adj Assistant Professor </h4>
-              <h5>October, 2026 - Present  </h5>
-              
-              <ul>
-                <li>Deliver lectures on the fundamentals of cybersecurity, covering core concepts, principles, and emerging
-security challenges.</li>
-                <li>Educate students on common cyberattacks, including phishing, malware, ransomware, social engineering,
-and web application attacks.</li>
-                <li>Develop lecture materials, presentations, practical exercises, and assessment materials to support
-effective learning.</li>
-                <li>Evaluate students' academic performance through assignments, quizzes, presentations, and
-examinations.</li>
-                <li>Encourage hands-on learning through practical exercises, case studies, and real-world cybersecurity
-scenarios.</li>      
-              </ul>
-            </div>
-
-              <div class="col-lg-6">
-            
-            <div class="resume-item">
-              <h4> California Institute of Career Development <br> CyberSecurity Instructor  </h4>
-              <h5>Part-Time </h5>
-              
-              <ul>
-                <li>Delivered online cybersecurity training sessions both the fundamentals and practical side of cybersecurity.</li>
-                <li>Provided hands-on experience through practical exercises, simulations, and real-world cybersecurity
-challenges. </li>
-                <li>Designed and guided participants through live-style security challenges, allowing them to apply their
-knowledge to realistic scenarios.</li>
-                <li>Explained cybersecurity concepts in a practical and easy-to-understand way, with a focus on
-problem-solving and real-world applications.</li>
-                 
-              </ul>
-            </div>
-
-              
-          <div class="col-lg-6">
-            
-            <div class="resume-item">
-              <h4> GISPL Consulting <br> Cyber Security Analyst </h4>
-              <h5>August, 2024 - May, 2025  </h5>
-              
-              <ul>
-                <li>Doing actively penetration testing on web application, Network.</li>
-                <li>Experience in writing VAPT Report. </li>
-                <li>Experience in doing pentesting on Thick Client as well.</li>
-                <li>Experience in doing security audit on client side.</li>
-                <li>Doing pentesting on client-side internal network.</li>      
-              </ul>
-            </div>
-            
-          <div class="resume-item">            
-              <h4> ANSH INFOTECH <br> Penetration Tester </h4>
-              <h5>May, 2024 - December,2024 </h5>
-              
-              <ul>
-                <li>Doing actively penetration testing on web application</li>
-                <li>Experience in doing VAPT. </li>
-                <li>Providing practical Skill-oriented trainings to cyber security Aspirants on various aspects.</li>
-                <li>Providing hands on experience on various cybersecurity tools through workshops.</li>
-                <li>Empowering students of different institutions with the emerging skill set through bootcamp programs.</li>
-                <li>Helping Individuals to become internationally certified in cybersecurity and ethical Hacking.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Virtual-Internship | ANZ | Forage <br> Cyber Security Management Virtual Experience Program</h4>
-              <h5>26th December, 2022</h5>
-              
-              <ul>
-                <li>Digital/Open source investigation.</li>
-                <li>Social Engineering concepts. </li>
-                <li>Security Report Writing.</li>
-                <li>investigate the threats.</li>
-                <li> Analyse Network Traffic.</li>
-              </ul>
-            </div>
-               
-          
-          <h3 class="resume-title"> Blogs/Writeups </h3>
-            <div class="resume-item">
-               </div>
-               <ul> <li><a href="https://medium.com/@faisaljaman.infosec/social-engineering-attacks-95fdbe7546bf"> SOCIAL ENGINEERING ATTACKS </a></li> 
-                <li><a href="https://medium.com/@faisaljaman.infosec/push-yourself-towards-web-3-0-190b27c73a43"> PUSH YOURSELF TOWARDS WEB 3.0</a> </li>
-              </ul>
-
-            <h3 class="resume-title"> Volunteering </h3>
-
-             <div class="resume-item">
-              <h4>CYBER-CONQUEST – CAPTURE THE FLAG  <br> ROLE: TECH LEAD </h4>
-
-                 <ul> 
-                  <li> Making challanges for the ctf.</li>
-                  <li> Lead the team maintaining the atmosphere for the students.</li>
-                  <li> Taking care of the backend server.</li>
-                 </ul>
-                 </div>
-
-            
-            <div class="resume-item">
-              <h4>TECHNOCEAN – API ENGINEERING WORKSHOP <br> ROLE: STUDENT CO-ORDINATOR </h4>
-
-                 <ul> 
-                  <li> Event Management.</li>
-                  <li> Maintaining the atmosphere for the students.</li>
-                  <li> Taking care of the needs of those students.</li>
-                 </ul>
-                 </div>         
-
-
-          </div>
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="sec-idx">02 / skills</span>
+          <h2 class="sec-title" data-scramble>Capabilities loaded.</h2>
+          <p class="sec-sub">Offensive security at the core, backed by the engineering skills to build and operate real tooling.</p>
         </div>
 
+        <div class="skills-grid">
+          <div class="card skill-card a spot reveal">
+            <h3><svg class="icon"><use href="#i-shield"/></svg> Offensive &amp; Defensive Security</h3>
+            <div class="meter" style="--v:90"><div class="meter-top"><span>Penetration Testing</span><b data-pct="90">0%</b></div><div class="meter-bar"><span class="meter-fill"></span></div></div>
+            <div class="meter" style="--v:100"><div class="meter-top"><span>Capture The Flag</span><b data-pct="100">0%</b></div><div class="meter-bar"><span class="meter-fill"></span></div></div>
+            <div class="meter" style="--v:90"><div class="meter-top"><span>OSINT</span><b data-pct="90">0%</b></div><div class="meter-bar"><span class="meter-fill"></span></div></div>
+            <div class="meter" style="--v:80"><div class="meter-top"><span>Web Application Security</span><b data-pct="80">0%</b></div><div class="meter-bar"><span class="meter-fill"></span></div></div>
+            <div class="meter" style="--v:70"><div class="meter-top"><span>Network Security</span><b data-pct="70">0%</b></div><div class="meter-bar"><span class="meter-fill"></span></div></div>
+          </div>
+
+          <div class="card skill-card b spot reveal">
+            <h3><svg class="icon"><use href="#i-code"/></svg> Build &amp; Operate</h3>
+            <div class="meter" style="--v:100"><div class="meter-top"><span>HTML</span><b data-pct="100">0%</b></div><div class="meter-bar"><span class="meter-fill"></span></div></div>
+            <div class="meter" style="--v:60"><div class="meter-top"><span>Python</span><b data-pct="60">0%</b></div><div class="meter-bar"><span class="meter-fill"></span></div></div>
+            <div class="meter" style="--v:60"><div class="meter-top"><span>CSS</span><b data-pct="60">0%</b></div><div class="meter-bar"><span class="meter-fill"></span></div></div>
+            <div class="meter" style="--v:60"><div class="meter-top"><span>System Administration</span><b data-pct="60">0%</b></div><div class="meter-bar"><span class="meter-fill"></span></div></div>
+          </div>
+
+          <div class="card skill-card c spot reveal">
+            <h3><svg class="icon"><use href="#i-terminal"/></svg> Day-to-day toolkit</h3>
+            <div class="chips">
+              <span class="chip">Web App Pentesting</span>
+              <span class="chip">Network Pentesting</span>
+              <span class="chip">Thick-Client Pentesting</span>
+              <span class="chip">VAPT Reporting</span>
+              <span class="chip">Security Audits</span>
+              <span class="chip">SIEM</span>
+              <span class="chip">Threat Intel</span>
+              <span class="chip">SOC Support</span>
+              <span class="chip">Social Engineering</span>
+              <span class="chip">Python</span>
+              <span class="chip">Bash</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">Blockchain / Web 3.0</span>
+              <span class="chip">TryHackMe</span>
+              <span class="chip">HackTheBox</span>
+              <span class="chip">Team Leadership</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </section><!-- End Resume Section -->
+    </section>
 
-    
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Galary</h2>
-          <p> Here are some photos for memories.... </p>
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="sec-idx">03 / experience</span>
+          <h2 class="sec-title" data-scramble>Mission log.</h2>
+          <p class="sec-sub">From pentesting engagements to the lecture hall.</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter=".filter-photo" class="filter-active">Photos</li>
-              <li data-filter=".filter-cert">Certifications</li>
-              <li data-filter=".filter-back">Background</li>
-    
-              
+        <div class="timeline">
+          <article class="card t-item now spot reveal">
+            <span class="node"></span>
+            <div class="t-head"><h3>Security Engineer</h3><span class="t-date">Nov 2025 — Present</span></div>
+            <p class="t-org">Mutual Trust Bank PLC</p>
+            <ul class="t-list">
+              <li>Performing penetration testing on web applications and networks.</li>
+              <li>Writing VAPT reports.</li>
+              <li>Learning SIEM tooling and threat intelligence.</li>
+              <li>Supporting the SOC team.</li>
             </ul>
-          </div>
+          </article>
+
+          <article class="card t-item now spot reveal">
+            <span class="node"></span>
+            <div class="t-head"><h3>Adjunct Assistant Professor</h3><span class="t-date">Oct 2026 — Present</span></div>
+            <p class="t-org">Eastern University</p>
+            <ul class="t-list">
+              <li>Deliver lectures on cybersecurity fundamentals — core concepts, principles and emerging security challenges.</li>
+              <li>Teach common cyberattacks including phishing, malware, ransomware, social engineering and web application attacks.</li>
+              <li>Develop lecture materials, presentations, practical exercises and assessments.</li>
+              <li>Evaluate performance through assignments, quizzes, presentations and examinations.</li>
+              <li>Drive hands-on learning with practical exercises, case studies and real-world scenarios.</li>
+            </ul>
+          </article>
+
+          <article class="card t-item spot reveal">
+            <span class="node"></span>
+            <div class="t-head"><h3>Cybersecurity Instructor</h3><span class="t-date">Part-time</span></div>
+            <p class="t-org">California Institute of Career Development</p>
+            <ul class="t-list">
+              <li>Delivered online training covering both the fundamentals and the practical side of cybersecurity.</li>
+              <li>Provided hands-on experience through exercises, simulations and real-world challenges.</li>
+              <li>Designed live-style security challenges so participants could apply knowledge to realistic scenarios.</li>
+              <li>Explained concepts in a practical, easy-to-understand way with a focus on problem-solving.</li>
+            </ul>
+          </article>
+
+          <article class="card t-item spot reveal">
+            <span class="node"></span>
+            <div class="t-head"><h3>Cyber Security Analyst</h3><span class="t-date">Aug 2024 — May 2025</span></div>
+            <p class="t-org">GISPL Consulting</p>
+            <ul class="t-list">
+              <li>Actively performed penetration testing on web applications and networks.</li>
+              <li>Wrote VAPT reports and ran security audits on the client side.</li>
+              <li>Pentested thick-client applications and client-side internal networks.</li>
+            </ul>
+          </article>
+
+          <article class="card t-item spot reveal">
+            <span class="node"></span>
+            <div class="t-head"><h3>Penetration Tester</h3><span class="t-date">May 2024 — Dec 2024</span></div>
+            <p class="t-org">ANSH INFOTECH</p>
+            <ul class="t-list">
+              <li>Actively performed web application penetration testing and VAPT.</li>
+              <li>Delivered skill-oriented training, workshops and bootcamps for cybersecurity aspirants and students across institutions.</li>
+              <li>Helped individuals become internationally certified in cybersecurity and ethical hacking.</li>
+            </ul>
+          </article>
+
+          <article class="card t-item spot reveal">
+            <span class="node"></span>
+            <div class="t-head"><h3>Cyber Security Management Virtual Experience</h3><span class="t-date">26 Dec 2022</span></div>
+            <p class="t-org">Virtual internship · ANZ × Forage</p>
+            <ul class="t-list">
+              <li>Digital / open-source investigation and threat investigation.</li>
+              <li>Social engineering concepts and security report writing.</li>
+              <li>Network traffic analysis.</li>
+            </ul>
+          </article>
         </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/workshop1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="img/portfolio/workshop1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/studio.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="img/portfolio/studio.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/1st-image.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-               
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/comptia.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="img/portfolio/comptia.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/expert.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="img/portfolio/expert.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-           <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/comptia2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="img/portfolio/comptia2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-                   <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/lecturer.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="img/portfolio/lecturer.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-back">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/nirjon.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="img/portfolio/nirjon.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-               
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-               
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/certificate.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="img/portfolio/certificate.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-           <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/certificates3.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="img/portfolio/certificates3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-           <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/certificates4.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="img/portfolio/certificates4.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-           <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/certificates5.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="img/portfolio/certificates5.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-           <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/certificates6.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="img/portfolio/certificates6.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/lecturer2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="img/portfolio/lecturer2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/new1.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="img/portfolio/new1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/certificate2.jpg"class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="img/portfolio/certificate2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-back">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/BACKGROUND.png"class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="img/portfolio/BACKGROUND.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/lecturer3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="img/portfolio/lecturer3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/prize.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="img/portfolio/prize.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-back">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/PANTHER.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="img/portfolio/PANTHER.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/prize2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="img/portfolio/prize2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-photo">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/logo.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <div class="portfolio-links">
-                  <a href="img/portfolio/logo.png" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-back">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-               
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                 
-              </div>
-            </div>
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
 
-    
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="sec-idx">04 / projects</span>
+          <h2 class="sec-title" data-scramble>Things I’ve built.</h2>
+          <p class="sec-sub">Security tooling across Node.js, Python and Bash.</p>
         </div>
 
-        <div class="row mt-1">
+        <div class="proj-grid">
+          <article class="card proj feature spot reveal">
+            <div class="proj-top"><span class="proj-no">PROJECT_01</span><span class="proj-ico"><svg class="icon"><use href="#i-shield"/></svg></span></div>
+            <h3>SecureTrack<small>Project &amp; vulnerability tracking platform</small></h3>
+            <ul class="t-list">
+              <li>A full-stack enterprise security and project tracking platform built for security teams.</li>
+              <li>A centralised solution for managing vulnerability assessments, application inventories, IT assets, security findings and reporting workflows.</li>
+            </ul>
+            <div class="chips"><span class="chip">Cyber-Security</span><span class="chip">Node.js</span><span class="chip">Full-stack</span></div>
+          </article>
 
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Bashundhara, Dhaka, Bangladesh </p>
-              </div>
+          <article class="card proj spot reveal">
+            <div class="proj-top"><span class="proj-no">PROJECT_02</span><span class="proj-ico"><svg class="icon"><use href="#i-key"/></svg></span></div>
+            <h3>HashHaven<small>NTLMv2 hash capture tool</small></h3>
+            <ul class="t-list">
+              <li>Python script that generates Windows shortcut files (.scf / .lnk) which trigger NTLM hash capture when opened — built for lab and authorised assessments.</li>
+              <li>Python chosen for platform independence and scripting convenience.</li>
+            </ul>
+            <div class="chips"><span class="chip">Cyber-Security</span><span class="chip">Python</span><span class="chip">Windows</span></div>
+          </article>
 
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>faisaljaman.infosec@gmail.com</p>
-              </div>
+          <article class="card proj spot reveal">
+            <div class="proj-top"><span class="proj-no">PROJECT_03</span><span class="proj-ico"><svg class="icon"><use href="#i-wifi"/></svg></span></div>
+            <h3>deauthwifi<small>Wi-Fi deauthentication toolkit</small></h3>
+            <ul class="t-list">
+              <li>A Bash CLI tool that makes Wi-Fi scanning and deauthentication commands easy for beginners.</li>
+              <li>Scan networks, run deauthentication tests and more from a single interface.</li>
+            </ul>
+            <div class="chips"><span class="chip">Cyber-Security</span><span class="chip">Bash</span><span class="chip">CLI</span></div>
+          </article>
 
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+880 179427327</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center">  <button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-
+          <article class="card proj feature spot reveal">
+            <div class="proj-top"><span class="proj-no">PROJECT_04</span><span class="proj-ico"><svg class="icon"><use href="#i-puzzle"/></svg></span></div>
+            <h3>Puzzle Game<small>Python puzzle challenge</small></h3>
+            <ul class="t-list">
+              <li>A puzzle-based game where players solve challenges to earn points, built in Python.</li>
+            </ul>
+            <div class="chips"><span class="chip">Cyber-Security</span><span class="chip">Python</span><span class="chip">Game</span></div>
+          </article>
         </div>
 
+        <p class="note reveal"><svg class="icon"><use href="#i-alert"/></svg><span>Offensive tools are built for labs, CTFs and authorised assessments only.</span></p>
+        <a class="more-link reveal" href="https://github.com/FaisalJaman1012" target="_blank" rel="noopener">More on GitHub <svg class="icon"><use href="#i-arrow"/></svg></a>
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-  </main><!-- End #main -->
+    <!-- ============ CREDENTIALS ============ -->
+    <section id="credentials">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="sec-idx">05 / credentials</span>
+          <h2 class="sec-title" data-scramble>Verified &amp; battle-tested.</h2>
+          <p class="sec-sub">Industry certifications, CTF results and continuous learning.</p>
+        </div>
 
- 
+        <div class="cred-grid">
+          <div class="card cred certs spot reveal">
+            <h3><svg class="icon"><use href="#i-award"/></svg> Certifications</h3>
+            <div class="cert-grid">
+              <div class="cert">
+                <span class="badge">COMPTIA</span>
+                <h4>PenTest+ ce</h4>
+                <a class="view" href="Certifications/CompTIA%20PenTest%2B%20ce%20certificate.pdf" target="_blank" rel="noopener">View certificate <svg class="icon"><use href="#i-arrow"/></svg></a>
+                <div class="code"><span>6NDS6GE59NR42TYJ</span><button data-copy="6NDS6GE59NR42TYJ">copy</button></div>
+              </div>
+              <div class="cert">
+                <span class="badge">COMPTIA</span>
+                <h4>Security+ ce</h4>
+                <a class="view" href="Certifications/CompTIA%20Security%2B%20ce%20certificate.pdf" target="_blank" rel="noopener">View certificate <svg class="icon"><use href="#i-arrow"/></svg></a>
+                <div class="code"><span>P7MD76SQ52QEQPC1</span><button data-copy="P7MD76SQ52QEQPC1">copy</button></div>
+              </div>
+              <div class="cert">
+                <span class="badge">COMPTIA</span>
+                <h4>Network+ ce</h4>
+                <a class="view" href="Certifications/CompTIA%20Network%2B%20ce%20certificate.pdf" target="_blank" rel="noopener">View certificate <svg class="icon"><use href="#i-arrow"/></svg></a>
+                <div class="code"><span>EDZYSH5TPJ4QQZSR</span><button data-copy="EDZYSH5TPJ4QQZSR">copy</button></div>
+              </div>
+              <div class="cert">
+                <span class="badge">COMPTIA</span>
+                <h4>Linux+ ce</h4>
+                <a class="view" href="Certifications/CompTIA%20Linux%2B%20ce%20certificate.pdf" target="_blank" rel="noopener">View certificate <svg class="icon"><use href="#i-arrow"/></svg></a>
+                <div class="code"><span>P76MRGHQRF4EQKCS</span><button data-copy="P76MRGHQRF4EQKCS">copy</button></div>
+              </div>
+              <div class="cert">
+                <span class="badge">COMPTIA</span>
+                <h4>Network Vulnerability Assessment Professional (CNVP)</h4>
+                <a class="view" href="Certifications/CompTIA%20Network%20Vulnerability%20Assessment%20Professional%20-%20CNVP%20certificate.pdf" target="_blank" rel="noopener">View certificate <svg class="icon"><use href="#i-arrow"/></svg></a>
+              </div>
+              <div class="cert">
+                <span class="badge">COMPTIA</span>
+                <h4>Linux Network Professional (CLNP)</h4>
+                <a class="view" href="Certifications/CompTIA%20Linux%20Network%20Professional%20-%20CLNP%20certificate.pdf" target="_blank" rel="noopener">View certificate <svg class="icon"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+            <p class="t-dim mono" style="margin-top:16px;font-size:.78rem;color:var(--dim)">Candidate ID: COMP001022460407</p>
+          </div>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+          <div class="card cred ctf spot reveal">
+            <h3><svg class="icon"><use href="#i-flag"/></svg> Capture The Flag</h3>
+            <div class="rank-list">
+              <div class="rank gold"><b>1st</b><span>CTF Tournament · CiscoXLPUIGEN 2023</span></div>
+              <div class="rank silver"><b>2nd</b><span>RCS CTF 2024</span></div>
+              <div class="rank"><b>5th</b><span>Quickheal × CompTIA CTF 2024</span></div>
+              <div class="rank"><b>6th</b><span>UPGRADE CTF · Concoction 2024</span></div>
+              <div class="rank"><b>150th</b><span>CREW CTF 2023</span></div>
+              <div class="rank"><b>164th</b><span>BDSEC CTF 2023</span></div>
+              <div class="rank"><b>285th</b><span>Replay Cyber Security Challenge 2023</span></div>
+            </div>
+            <div class="extras">
+              <span class="chip">Top 2% · TryHackMe</span>
+              <span class="chip">GURU rank · TryHackMe</span>
+              <span class="chip">Script Kiddie · HackTheBox</span>
+              <span class="chip">Cloud Goodies · Google</span>
+            </div>
+          </div>
 
-  <!-- Vendor JS Files -->
-  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="vendor/aos/aos.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="vendor/typed.js/typed.umd.js"></script>
-  <script src="vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="vendor/php-email-form/validate.js"></script>
+          <div class="card cred edu spot reveal">
+            <h3><svg class="icon"><use href="#i-cap"/></svg> Education</h3>
+            <div class="edu-item">
+              <h4>Lovely Professional University</h4>
+              <p>B.Tech (Hons) with specialisation in Cyber Security &amp; Blockchain</p>
+              <div class="big-num">7.45<small>CGPA</small></div>
+            </div>
+          </div>
 
-  <!--Main JS File -->
+          <div class="card cred courses spot reveal">
+            <h3><svg class="icon"><use href="#i-book"/></svg> Courses</h3>
+            <div class="chips">
+              <span class="chip">Pre Security</span>
+              <span class="chip">Foundation of Cybersecurity</span>
+              <span class="chip">Penetration Testing &amp; Ethical Hacking</span>
+              <span class="chip">Jr Penetration Tester</span>
+              <span class="chip">Web Fundamentals</span>
+              <span class="chip">Ethical Hacking</span>
+              <span class="chip">Cyber Ethics</span>
+              <span class="chip">Cyber Hygiene Practitioner</span>
+            </div>
+          </div>
+
+          <div class="card cred writing spot reveal">
+            <h3><svg class="icon"><use href="#i-medium"/></svg> Blogs &amp; Write-ups</h3>
+            <div class="link-list">
+              <a href="https://medium.com/@faisaljaman.infosec/social-engineering-attacks-95fdbe7546bf" target="_blank" rel="noopener"><span>Social Engineering Attacks</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+              <a href="https://medium.com/@faisaljaman.infosec/push-yourself-towards-web-3-0-190b27c73a43" target="_blank" rel="noopener"><span>Push Yourself Towards Web 3.0</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+
+          <div class="card cred vol spot reveal">
+            <h3><svg class="icon"><use href="#i-users"/></svg> Volunteering</h3>
+            <div class="vol-grid">
+              <div>
+                <h4>Cyber-Conquest — Capture The Flag</h4>
+                <small>ROLE · TECH LEAD</small>
+                <p>Built challenges for the CTF, led the team, kept the atmosphere right for students and looked after the backend server.</p>
+              </div>
+              <div>
+                <h4>Technocean — API Engineering Workshop</h4>
+                <small>ROLE · STUDENT CO-ORDINATOR</small>
+                <p>Event management, maintaining the atmosphere for students and taking care of their needs throughout.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section id="gallery">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="sec-idx">06 / gallery</span>
+          <h2 class="sec-title" data-scramble>Moments &amp; memories.</h2>
+          <p class="sec-sub">Workshops, lectures, prizes and certificates — click any frame to open.</p>
+        </div>
+        <div class="filters reveal" id="filters" role="group" aria-label="Gallery filters"></div>
+        <div class="masonry" id="gallery-grid"></div>
+        <noscript><p class="sec-sub">Enable JavaScript to browse the gallery.</p></noscript>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="sec-idx">07 / contact</span>
+          <h2 class="sec-title" data-scramble>Let’s secure something.</h2>
+          <p class="sec-sub">Penetration testing, VAPT, training or a CTF collaboration — send a message and I’ll get back to you.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="card ci spot reveal">
+              <span class="ico"><svg class="icon"><use href="#i-pin"/></svg></span>
+              <div><small>Location</small><p>Bashundhara, Dhaka, Bangladesh</p></div>
+            </div>
+            <div class="card ci spot reveal">
+              <span class="ico"><svg class="icon"><use href="#i-mail"/></svg></span>
+              <div><small>Email</small><a href="mailto:faisaljaman.infosec@gmail.com">faisaljaman.infosec@gmail.com</a></div>
+            </div>
+            <div class="card ci spot reveal">
+              <span class="ico"><svg class="icon"><use href="#i-phone"/></svg></span>
+              <div><small>Call</small><a href="tel:+8801794827327">+880 1794827327</a></div>
+            </div>
+          </div>
+
+          <!-- To receive messages without opening a mail app, create a free form at https://formspree.io
+               and paste its endpoint into data-endpoint (e.g. https://formspree.io/f/xxxxxxx). -->
+          <form class="card compose reveal" id="contact-form" data-endpoint="" novalidate>
+            <div class="term-bar"><i></i><i></i><i></i><span>compose --new-message</span></div>
+            <div class="compose-body">
+              <div class="row2">
+                <div class="field"><label for="f-name">name</label><input id="f-name" name="name" type="text" placeholder="Your name" autocomplete="name" required></div>
+                <div class="field"><label for="f-email">email</label><input id="f-email" name="email" type="email" placeholder="you@domain.com" autocomplete="email" required></div>
+              </div>
+              <div class="field"><label for="f-subject">subject</label><input id="f-subject" name="subject" type="text" placeholder="What’s this about?" required></div>
+              <div class="field"><label for="f-msg">message</label><textarea id="f-msg" name="message" rows="6" placeholder="Tell me about your project…" required></textarea></div>
+              <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <div class="form-foot">
+                <span class="form-status" id="form-status" role="status" aria-live="polite"></span>
+                <button class="btn btn-primary" type="submit"><svg class="icon"><use href="#i-send"/></svg> Send message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>© <span id="year">2026</span> Md Faisal Jaman · “Your Security is My Passion.”</span>
+      <span>Press <span class="kbd">Ctrl</span> + <span class="kbd">K</span> for the command palette</span>
+      <a href="#hero">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Back to top"><svg class="icon"><use href="#i-up"/></svg></button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Lightbox -->
+  <dialog id="lightbox" aria-label="Image viewer">
+    <div class="lb" id="lb">
+      <button class="lb-btn lb-close" id="lb-close" aria-label="Close"><svg class="icon"><use href="#i-x"/></svg></button>
+      <button class="lb-btn lb-prev" id="lb-prev" aria-label="Previous image"><svg class="icon"><use href="#i-arrow-l"/></svg></button>
+      <img id="lb-img" alt="">
+      <button class="lb-btn lb-next" id="lb-next" aria-label="Next image"><svg class="icon"><use href="#i-arrow-r"/></svg></button>
+      <div class="lb-count mono" id="lb-count"></div>
+    </div>
+  </dialog>
+
+  <!-- Command palette -->
+  <dialog id="palette" aria-label="Command palette">
+    <div class="pal">
+      <div class="pal-input">
+        <svg class="icon"><use href="#i-search"/></svg>
+        <input id="pal-q" type="text" placeholder="Type a command or jump to a section…" autocomplete="off" spellcheck="false" aria-label="Search commands">
+        <kbd>Esc</kbd>
+      </div>
+      <div class="pal-list" id="pal-list" role="listbox"></div>
+      <div class="pal-foot"><span>↑↓ navigate</span><span>↵ run</span><span>esc close</span></div>
+    </div>
+  </dialog>
+
   <script src="js/main.js"></script>
-
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
